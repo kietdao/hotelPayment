@@ -1,7 +1,7 @@
 const giaQuaDem = 200;
 
-const gioVao = new Date('2022-04-06 12:00:00');
-const gioRa = new Date('2022-04-07 20:00:00');
+const gioVao = new Date('2022-04-06 11:00:00');
+const gioRa = new Date('2022-04-07 16:00:00');
 
 
 
@@ -24,11 +24,11 @@ function tinhTienPhong(gioVao, gioRa) {
         }
     }
 
-    console.log('Tong tien phong la ' + total)
     return total
 }
 
-
+const total = tinhTienPhong(gioVao, gioRa) 
+console.log('Tong Tien phong la ' + total)
 
 // Test Case 1
 // Total: 200
@@ -60,4 +60,3 @@ function tinhTienPhong(gioVao, gioRa) {
 // Total: 230
 // const gioVao = new Date('2022-04-06 10:00:00');
 // const gioRa = new Date('2022-04-07 11:00:00');
-tinhTienPhong(gioVao, gioRa) 
